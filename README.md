@@ -6,15 +6,17 @@
 ```php
 <?php
 
-$testStr = "my heart is broken 💔，" ;
+$testStr = "my heart is broken 💔" ;
 
 $emoji = new Emoji(new UnicodeConvert()) ;
 
-echo $emoji->encode($testStr) ;
+$ecodeStr = $emoji->encode($testStr) ;
 
-echo "<br>" ;
+$decodeStr =  $emoji->decode($ecodeStr) ;
 
-echo $emoji->decode($testStr) ;
+echo $ecodeStr."\n\n" ;
+echo $decodeStr."\n\n" ;
+
 ```
 
 ##LICENSE
