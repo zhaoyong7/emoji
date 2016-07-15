@@ -15,6 +15,7 @@ echo $emoji->encode($testStr) ;
 echo "<br>" ;
 
 echo $emoji->decode($testStr) ;
+```
 
 ##LICENSE
 released under the [MIT license](https://github.com/zhaoyong7/QMEmoji/blob/master/MIT-LICENSE.txt).
